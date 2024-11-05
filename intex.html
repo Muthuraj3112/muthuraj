@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muthukutty</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bf87651658.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+      <div class="container">
+        <nav>
+            <h1>Muthuraj</h1>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>                                   
+        </nav>
+        <div class="header-text">
+            <p>Fullstack Developer</p>
+            <h1>Hi, I'm <span>Muthuraj</span> From<br>Kallakurichi</h1>
+        </div> 
+      </div>
+  </div>
+  <!-------------about section ---------->
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.jpg" alt="User Image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a motivated computer science graduate with a passion for problem-solving and coding. I am a fullstack developer eager to apply academic knowledge in a real-world setting. Proficient in languages like C and Python, with a solid foundation in algorithms and data structures. Quick learner, team player, and dedicated to continuous self-improvement.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentap('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentap('Education')">Education</p>
+                    <p class="tab-links" onclick="opentap('Certificates')">Tools</p>
+                </div>
+                <div class="tab-contents active-tap" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2018-2019</span><br>Government High School,66%</li>
+                        <li><span>2019-2021</span><br>Government Higher Secondary School,72%</li>
+                        <li><span>2021-2025</span><br>Computer Science and Engineering,CGPA-8</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Certificates">
+                    <ul>
+                        <li><span>2021</span><br>Microsoft Office</li>
+                        <li><span>2022</span><br>Oracle Cloud Computing - ORACLE</li>
+                        <li><span>2023</span><br>Hands-On Introduction: JavaScript - LINKEDIN</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-----------------services------------------>
+  <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I'm a computer science graduate with a passion for problem-solving and coding. I am a fullstack developer eager to apply academic knowledge in a real-world setting.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>I'm a computer science graduate with a passion for problem-solving and coding. I am a fullstack developer eager to apply academic knowledge in a real-world setting.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>I'm a computer science graduate with a passion for problem-solving and coding. I am a fullstack developer eager to apply academic knowledge in a real-world setting.</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!--------------------portfolio------------ --->
+  <div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="guna.jpg">
+                <div class="layer">
+                    <h3>Social Media app</h3>
+                    <p>The app connects you the talented people around the world.
+                    Download it from play store.</p>
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="muthu.jpg">
+                <div class="layer">
+                    <h3>Music app</h3>
+                    <p>Download it from play store.</p>
+                    <a href="#"></a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+  </div>
+  <!-------------contact----------->
+  <div id="contact">
+       <div class="container">
+           <div class="row">
+               <div class="contact-left">
+                   <h1 class="sub-title">Contact Me</h1>
+                    <p>muthuraj31be.cse@gmail.com</p>
+                    <p>9043556372</p>
+                    <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                   </div>
+                   <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+               </div>
+               <div class="contact-right">
+                   <form>
+                    <input type="text" name="name" placeholder="your name" required>
+                    <input type="email" name="email" placeholder="your email" required>
+                    <textarea name="message" rows="6" placeholder="your message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                   </form>
+               </div>
+           </div>
+       </div>
+       <div class="copyright">
+           <p>copyright Muthuraj.made with by website</p>
+       </div>  
+  </div>
+  
+  <script>
+
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentap(tabname){
+         for(tablink of tablinks){
+             tablink.classList.remove("active-link");
+         }
+         for(tabcontent of tabcontents){
+             tabcontent.classList.remove("active-tap");
+         }
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tap");
+      }
+
+  </script>
+  
+</body>
+</html>
